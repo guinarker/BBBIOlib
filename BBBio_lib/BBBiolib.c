@@ -150,6 +150,7 @@ int iolib_init(void)
 
 	BBBIO_PWM_Init();
 	BBBIO_McSPI_Init();
+	BBBIO_McASP_Init(0);
 	BBBIO_ADCTSC_Init();
 
 	return 0;
@@ -161,6 +162,7 @@ int iolib_init(void)
  */
 int iolib_free(void)
 {
+	
 	if (memh!=0) {
 		close(memh);
 	}

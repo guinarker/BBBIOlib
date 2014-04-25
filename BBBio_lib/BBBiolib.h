@@ -239,6 +239,8 @@ int BBBIO_sys_pinmux_check(unsigned int port, unsigned int pin, unsigned int Cfl
 #define BBBIO_CM_PER_EPWMSS2_CLKCTRL	0xD8
 #define BBBIO_CM_PER_SPI0_CLKCTRL	0x4C
 #define BBBIO_CM_PER_SPI1_CLKCTRL       0x50
+#define BBBIO_CM_PER_MCASP0_CLKCTRL	0x34
+#define BBBIO_CM_PER_MCASP1_CLKCTRL	0x68 
 
 
 /* ----------------------------------------------------------------------
