@@ -24,6 +24,9 @@ Simple C I/O library of Beaglebone balck
 	V2.7	December.20 2013 - add simple McSPI control function .
 
 	V2.8	March.14 2014 - add ADC application of Arduino Microphone module ,and ADC argument calculation toolkit .
+	
+	----- FORK
+	V2.8.1 Add McASP test
 
 =============================================================================================
 
