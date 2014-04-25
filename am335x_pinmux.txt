@@ -13,3 +13,6 @@ http://e2e.ti.com/support/arm/sitara_arm/f/791/t/194645.aspx
 Setup BBB
 
 http://eewiki.net/display/linuxonarm/BeagleBone+Black
+
+Great Shabaz article
+http://www.element14.com/community/people/shabaz/
