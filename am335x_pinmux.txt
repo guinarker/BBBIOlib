@@ -5,3 +5,11 @@ http://www.embedded-things.com/wp-content/uploads/2013/08/P8.png
 P9 header:
 
 http://www.embedded-things.com/wp-content/uploads/2013/08/P9.png
+
+Mcasp old way 
+
+http://e2e.ti.com/support/arm/sitara_arm/f/791/t/194645.aspx
+
+Setup BBB
+
+http://eewiki.net/display/linuxonarm/BeagleBone+Black
