@@ -24,7 +24,7 @@
 #define MCASP_SYSCONFIG	0x04
 
 /* Global register */
-#define MCASP_REV	0x0 // default value 0x44300A02 to check the registers access (familial)
+#define MCASP_REV	0x0 // default value 0x44300A02 to check the registers access 
 #define MCASP_PFUNC 0x10
 #define MCASP_PDIR 0x14
 #define MCASP_PDOUT 0x18
