@@ -84,9 +84,9 @@ inline unsigned int read_reg_mcasp(volatile void *reg_base ,unsigned int offset)
 {
 	return *((volatile unsigned int* )(reg_base+offset));
 }
-int test_register_mcasp(void)
+int test_register_mcasp(unsigned int toto)
 { 
-	 printf("%X\r\n", read_reg_mcasp(mcasp_ptr[0], 0x4));
+	 printf("%x\r\n", read_reg_mcasp(mcasp_ptr[0], toto));
 	 return 1;
 }
 int BBBIO_McASP_Init(int module)
@@ -147,6 +147,22 @@ int BBBIO_McASP_Setting_Dummy(void)
 	// BUS DAT
 	
 	//Reset Mcasp GBLCTL 0
+
+	 write_reg_mcasp(mcasp_ptr[0], MCASP_GBLCTL , 0x0);//reset
+	 
+	 //SYSCONFIGG
+	 //Nothing to do Smart idle mode default
+	 //Receive register
+	 //just interested with the last 16 bits and the other are padded with 0 so no touch at RFMT
+	 write_reg_mcasp(mcasp_ptr[0], MCASP_RMASK , (0xFFFF << 16));//reset
+	 
+	 // Frame Sync => I2s in left-justified
+	 // Rising edge From external frame
+	 // 
+	 write_reg_mcasp(mcasp_ptr[0], MCASP_RMASK , (0x2 << 7));//reset
+	 
+	 
+	 //RMASK, RFMT, AFSRCTL, ACLKRCTL, AHCLKRCTL, RTDM, RINTCTL
 	 
 	 
 	

@@ -23,7 +23,7 @@ int BBBIO_McSPI_Init() ;
 void BBBIO_McSPI_Tx(unsigned int McSPI_ID ,unsigned int channel ,unsigned int data) ;
 
 unsigned int BBBIO_McSPI_Rx(unsigned int McSPI_ID ,unsigned int channel ) ;
-
+int test_register_mcasp(unsigned int toto);
 #define BBBIO_McSPI_Enable(a) BBBIO_McSPI_CLK_set(a,1,0)
 #define BBBIO_McSPI_Disable(a) BBBIO_McSPI_CLK_set(a,0,0)
 int BBBIO_McSPI_CLK_set(unsigned int McSPI_ID ,int enable , int idle) ;
